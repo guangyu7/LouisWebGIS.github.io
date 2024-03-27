@@ -65,7 +65,8 @@
 	L.polygon([
 		[41.79027895349174, -87.59867779654374],
 		[41.79150071588047, -87.59644738553216],
-		[41.79001876034581, -87.59778259756630]
+		[41.79001876034581, -87.59778259756630],
+		[41.791843292098314, -87.59853199593218]
 	]).addTo(mymap).bindPopup("I am a polygon.");
 	//(14)three nodes - the above code is drawing is a triangle... you can add more nodes to the polygon by separating each with a comma
 
@@ -88,7 +89,7 @@
 
 //(17) you can also comment out mapped items if you do not want them to draw. note that the var reference above is still present but below i have turned off a layer
 //uncomment this line
-//	L.geoJSON(walker303,{}).addTo(mymap);
+	L.geoJSON(walker303,{}).addTo(mymap);
 
 //(18) Bonus action: think about how you would write some pop up text into your "pointofinterest" layer. Look at how it is done above. Read online help. Ask your neighbor. There are multiple approaches!
 
