@@ -35,7 +35,7 @@
         minZoom: 0,
         maxZoom: 20,
         ext: 'png'
-}).addTo(map);
+        }).addTo(map);
 
         function getColor(value) {
             return value > 50000000 ? '#54278f':
@@ -60,17 +60,12 @@
         var canvas = L.tileLayer
         ('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base /MapServer/tile/{z}/{y}/{x}', {
                                 attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS', maxZoom: 13
-}).addTo(map);
+        }).addTo(map);
 
          var provinces = L.geoJson(provinces).addTo(map);
 
          var coviddata = L.geoJson(coviddata).addTo(map);
 
-         var basemaps = { "Terrain": canvas, "Satellite": imagery
-                    };
-
-         var overlaymaps = { "China Provinces ": provinces
-                    };
          var provinces = new L.geoJson(provinces, {style:style}).addTo(map);
 
          var coviDdata = new L.geoJson(covidData).addTo(map);
@@ -78,7 +73,14 @@
          var minValue = 100; 
 
          var minRadius = 5;
+
+         var basemaps = { "Terrain": canvas, "Satellite": imagery
+                    };
+
+         var overlaymaps = { "China Provinces ": provinces
+                    };
         
+         L.control.layers(basemaps, overlaymaps, {collapsed:false}).addTo(map);
         // you can modify the math used here to determine proportional scaling
 
         function calcRadius(val) {
@@ -134,9 +136,8 @@
                        radius: calcRadius(feature.properties.covid)
                     }); 
                 }
-          });
-
-         L.control.layers(basemaps, overlaymaps, {collapsed:false}).addTo(map);
+            });
+            //added });
 
         </script>
     </body>
