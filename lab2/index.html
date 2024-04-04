@@ -98,7 +98,7 @@
            }
           }; // end onEachFeature
 
-        var covidData = new L.geoJson(covidData, { 
+        var covidData = new L.geoJson(coviddata, { 
             onEachFeature : onEachFeature,
             pointToLayer : function(feature, ll){
                 return L.circleMarker(ll, {
