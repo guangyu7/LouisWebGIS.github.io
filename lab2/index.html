@@ -35,7 +35,7 @@
         minZoom: 0,
         maxZoom: 20,
         ext: 'png'
-}).addTo(map);
+        }).addTo(map);
 
         function getColor(value) {
             return value > 50000000 ? '#54278f':
@@ -60,7 +60,7 @@
         var canvas = L.tileLayer
         ('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base /MapServer/tile/{z}/{y}/{x}', {
                                 attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS', maxZoom: 13
-}).addTo(map);
+        }).addTo(map);
 
          var provinces = L.geoJson(provinces).addTo(map);
 
