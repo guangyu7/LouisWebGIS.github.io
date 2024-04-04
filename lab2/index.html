@@ -15,7 +15,7 @@
 
          <script src="https://guangyu7.github.io/lab2/provinces.js"></script>
 
-         <script src="https://guangyu7.github.io/lab2/coviddata.js"></script>
+         <script src="https://guangyu7.github.io/lab2/covidData.js"></script>
 
     </head>
 
@@ -48,20 +48,24 @@
             };
         }
 
-        var imagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_I magery/MapServer/tile/{z}/{y}/{x}', {
+    
+        
+
+        var imagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
                                 attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed,USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
                     });
-
+        
+        
         var canvas = L.tileLayer
-        ('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base /MapServer/tile/{z}/{y}/{x}', {
+        ('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
                                 attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS', maxZoom: 13
         }).addTo(map);
 
 
 
+
          var provinces = new L.geoJson(provinces, {style:style}).addTo(map);
 
-         var covidData = new L.geoJson(covidData).addTo(map);
 
          var minValue = 100; 
 
@@ -72,7 +76,7 @@
          return 0.9 * Math.pow(val/minValue, .7) * minRadius;
         }
 
-    
+        //var coviddata = new L.geoJson(coviddata).addTo(map);
         
         var onEachFeature = function(feature, layer) { 
                 if (feature.properties) {
@@ -94,7 +98,7 @@
            }
           }; // end onEachFeature
 
-        var coviddata = new L.geoJson(covidData, { 
+        var covidData = new L.geoJson(covidData, { 
             onEachFeature : onEachFeature,
             pointToLayer : function(feature, ll){
                 return L.circleMarker(ll, {
