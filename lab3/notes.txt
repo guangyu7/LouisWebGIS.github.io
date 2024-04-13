@@ -1,0 +1,6 @@
+Data: 4326
+Decimal degrees
+
+Basemap: 3857
+Raster,from scratch
+Meters

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="bus.js"></script>
+  <title>Leaflet Preview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+   integrity="sha384-o/2yZuJZWGJ4s/adjxVW71R+EO/LyCwdQfP5UWSgX/w87iiTXuvDZaejd3TsN7mf"
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+   integrity="sha384-okbbMvvx/qfQkmiQKfd5VifbKZ/W8p1qIsWvE1ROPUfHWsDcC8/BnHohF7vPg2T6"
+   crossorigin=""></script>
+  <style type="text/css">
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    html, body, #map{
+       width: 100%;
+       height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+      var map = L.map('map', { attributionControl: false } ).setView([41.783885805239066, -87.59934249482956], 14.0);
+      var busIcon = L.icon({
+          iconUrl: 'bus.png',
+          iconSize: [32, 32], 
+          iconAnchor: [16, 16] 
+      });
+      var busStops = L.geoJson(bus, {
+          pointToLayer: function (feature, latlng) {
+              var marker = L.marker(latlng, { icon: busIcon });
+              marker.bindPopup("this is a bus!");
+              return marker;
+          }
+      }).addTo(map);
+      L.control.attribution( { prefix: false } ).addTo( map );
+      
+      var tilesource_layer = L.tileLayer('file:////private/var/folders/x5/_lwrr5_137bc1zcv6mtp199r0000gn/T/processing_wvXdng/f97b46620a594bc9ae67bd7f43b0e70c/OUTPUT_DIRECTORY/{z}/{x}/{y}.png', {
+        minZoom: 13,
+        maxZoom: 15,
+        tms: false,
+        attribution: 'Created by QGIS algorithm: Generate XYZ tiles (Directory)'
+      }).addTo(map);
+  </script>
+</body>
+</html>
