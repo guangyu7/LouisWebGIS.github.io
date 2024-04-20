@@ -1,0 +1,530 @@
+[
+  {
+    "Fact": "Population estimates, July 1, 2023, (V2023)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "326,716",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population Estimates, July 1, 2022, (V2022)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "324,434",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population estimates base, April 1, 2020, (V2023)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "322,613",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population estimates base, April 1, 2020, (V2022)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "322,613",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population, percent change - April 1, 2020 (estimates base) to July 1, 2023, (V2023)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "1.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population, percent change - April 1, 2020 (estimates base) to July 1, 2022, (V2022)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "0.6%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population, Census, April 1, 2020",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "322,608",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population, Census, April 1, 2010",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "285,407",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons under 5 years, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "5.7%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons under 18 years, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "22.1%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons 65 years and over, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "15.6%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Female persons, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "49.6%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "White alone, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "86.4%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Black or African American alone, percent",
+    "Fact Note": "(a)",
+    "Lancaster County, Nebraska": "4.5%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "American Indian and Alaska Native alone, percent",
+    "Fact Note": "(a)",
+    "Lancaster County, Nebraska": "1.0%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Asian alone, percent",
+    "Fact Note": "(a)",
+    "Lancaster County, Nebraska": "4.7%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Native Hawaiian and Other Pacific Islander alone, percent",
+    "Fact Note": "(a)",
+    "Lancaster County, Nebraska": "0.1%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Two or More Races, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "3.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Hispanic or Latino, percent",
+    "Fact Note": "(b)",
+    "Lancaster County, Nebraska": "8.1%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "White alone, not Hispanic or Latino, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "79.7%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Veterans, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "14,859",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Foreign born persons, percent, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "8.4%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Housing units, July 1, 2022, (V2022)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "140,072",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Owner-occupied housing unit rate, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "59.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Median value of owner-occupied housing units, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$239,900",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Median selected monthly owner costs -with a mortgage, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$1,624",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Median selected monthly owner costs -without a mortgage, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$661",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Median gross rent, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$997",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Building permits, 2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "3,270",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Households, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "129,869",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons per household, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 2.38,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Living in same house 1 year ago, percent of persons age 1 year+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "81.0%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Language other than English spoken at home, percent of persons age 5 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "11.9%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Households with a computer, percent, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "96.0%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Households with a broadband Internet subscription, percent, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "91.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "High school graduate or higher, percent of persons age 25 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "93.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Bachelor's degree or higher, percent of persons age 25 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "40.9%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "With a disability, under age 65 years, percent, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "7.9%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons without health insurance, under age 65 years, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "7.2%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "In civilian labor force, total, percent of population age 16 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "70.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "In civilian labor force, female, percent of population age 16 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "66.7%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total accommodation and food services sales, 2017 ($1,000)",
+    "Fact Note": "(c)",
+    "Lancaster County, Nebraska": "761,138",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total health care and social assistance receipts/revenue, 2017 ($1,000)",
+    "Fact Note": "(c)",
+    "Lancaster County, Nebraska": "2,890,677",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total transportation and warehousing receipts/revenue, 2017 ($1,000)",
+    "Fact Note": "(c)",
+    "Lancaster County, Nebraska": "908,778",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total retail sales, 2017 ($1,000)",
+    "Fact Note": "(c)",
+    "Lancaster County, Nebraska": "4,810,329",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total retail sales per capita, 2017",
+    "Fact Note": "(c)",
+    "Lancaster County, Nebraska": "$15,325",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Mean travel time to work (minutes), workers age 16 years+, 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 19,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Median household income (in 2022 dollars), 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$70,387",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Per capita income in past 12 months (in 2022 dollars), 2018-2022",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "$38,509",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Persons in poverty, percent",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "12.5%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total employer establishments, 2021",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "8,794",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total employment, 2021",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "141,673",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total annual payroll, 2021 ($1,000)",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "7,308,417",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total employment, percent change, 2020-2021",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "-3.3%",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Total nonemployer establishments, 2021",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "23,293",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "All employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "6,896",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Men-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "3,792",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Women-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "1,014",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Minority-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 369,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Nonminority-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "5,644",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Veteran-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 367,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Nonveteran-owned employer firms, Reference year 2017",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "5,489",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population per square mile, 2020",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 385.2,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Population per square mile, 2010",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 340.8,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Land area in square miles, 2020",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 837.56,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Land area in square miles, 2010",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 837.55,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "FIPS Code",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": 31109,
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "NOTE: FIPS Code values are enclosed in quotes to ensure leading zeros remain intact.",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Value Notes",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "None",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Fact Notes",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "(a)",
+    "Fact Note": "Includes persons reporting only one race",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "(c)",
+    "Fact Note": "Economic Census - Puerto Rico data are not comparable to U.S. Economic Census data",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "(b)",
+    "Fact Note": "Hispanics may be of any race, so also are included in applicable race categories",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Value Flags",
+    "Fact Note": "",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "-",
+    "Fact Note": "Either no or too few sample observations were available to compute an estimate, or a ratio of medians cannot be calculated because one or both of the median estimates falls in the lowest or upper interval of an open ended distribution.",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "F",
+    "Fact Note": "Fewer than 25 firms",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "D",
+    "Fact Note": "Suppressed to avoid disclosure of confidential information",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "N",
+    "Fact Note": "Data for this geographic area cannot be displayed because the number of sample cases is too small.",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "FN",
+    "Fact Note": "Footnote on this item in place of data",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "X",
+    "Fact Note": "Not applicable",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "S",
+    "Fact Note": "Suppressed; does not meet publication standards",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "NA",
+    "Fact Note": "Not available",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  },
+  {
+    "Fact": "Z",
+    "Fact Note": "Value greater than zero but less than half unit of measure shown",
+    "Lancaster County, Nebraska": "",
+    "Value Note for Lancaster County, Nebraska": ""
+  }
+]
