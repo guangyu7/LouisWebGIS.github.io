@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Wildfire Map</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/dark/main.css" />
+  <script src="https://js.arcgis.com/4.29/"></script>
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #timeSlider {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 20px;
+    }
+  </style>
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/GraphicsLayer",
+      "esri/Graphic",
+      "esri/widgets/TimeSlider",
+      "esri/widgets/Legend",
+      "esri/PopupTemplate"
+    ], function (Map, MapView, GraphicsLayer, Graphic, TimeSlider, Legend, PopupTemplate) {
+
+      const map = new Map({
+        basemap: "dark-gray"
+      });
+
+      const view = new MapView({
+        map: map,
+        container: "viewDiv",
+        zoom: 3,
+        center: [-100, 40]
+      });
+
+      const graphicsLayer = new GraphicsLayer({
+        popupTemplate: new PopupTemplate({
+          title: "{FIRE_NAME}",
+          content: [{
+            type: "fields",
+            fieldInfos: [
+              {
+                fieldName: "FIRE_TYPE",
+                label: "Fire Type"
+              },
+              {
+                fieldName: "IG_DATE",
+                label: "Ignition Date"
+              },
+              {
+                fieldName: "FIRE_NAME",
+                label: "Fire Name"
+              }
+            ]
+          }]
+        })
+      });
+
+      fetch("https://guangyu7.github.io/final/fire.geojson")
+        .then(response => response.json())
+        .then(json => {
+          // Sort the features by ACRES attribute
+          json.features.sort((a, b) => a.properties.ACRES - b.properties.ACRES);
+
+          const featuresCount = json.features.length;
+          const third = Math.floor(featuresCount / 3); // Divide features into three equal parts
+
+          const sizes = [6, 10, 14]; // Marker sizes for three different sizes
+          const thresholds = [json.features[third].properties.ACRES, json.features[2 * third].properties.ACRES]; // Thresholds for dividing into three sizes
+
+          let sizeIndex = 0;
+
+          json.features.forEach(feature => {
+            const attributes = feature.properties;
+            const coordinates = feature.geometry.coordinates;
+
+            let color;
+            switch (attributes.FIRE_TYPE) {
+              case "Prescribed Fire":
+                color = "blue";
+                break;
+              case "Unknown":
+                color = "gray";
+                break;
+              case "Wildfire":
+                color = "red";
+                break;
+              case "Wildland Fire Use":
+                color = "green";
+                break;
+              default:
+                color = "black";
+            }
+
+            // Find appropriate size based on ACRES value
+            let size;
+            if (attributes.ACRES <= thresholds[0]) {
+              size = sizes[0];
+            } else if (attributes.ACRES <= thresholds[1]) {
+              size = sizes[1];
+            } else {
+              size = sizes[2];
+            }
+
+            const graphic = new Graphic({
+              geometry: {
+                type: "point",
+                longitude: coordinates[0],
+                latitude: coordinates[1]
+              },
+              attributes: attributes,
+              symbol: {
+                type: "simple-marker",
+                color: color,
+                size: size
+              }
+            });
+            graphicsLayer.add(graphic);
+          });
+
+          map.add(graphicsLayer);
+
+          const timeSlider = new TimeSlider({
+            container: "timeSlider",
+            view: view,
+            timeVisible: true,
+            loop: true
+          });
+
+          const allDates = json.features.map(feature => new Date(feature.properties.IG_DATE));
+          const minDate = new Date(Math.min.apply(null, allDates));
+          const maxDate = new Date(Math.max.apply(null, allDates));
+          timeSlider.fullTimeExtent = {
+            start: minDate,
+            end: maxDate
+          };
+
+          timeSlider.watch("timeExtent", (timeExtent) => {
+            updateGraphics(timeExtent);
+          });
+
+          function updateGraphics(timeExtent) {
+            const filteredFeatures = json.features.filter(feature => {
+              const featureDate = new Date(feature.properties.IG_DATE);
+              return featureDate >= timeExtent.start && featureDate <= timeExtent.end;
+            });
+
+            graphicsLayer.removeAll();
+
+            filteredFeatures.forEach(feature => {
+              const attributes = feature.properties;
+              const coordinates = feature.geometry.coordinates;
+
+              let color;
+              switch (attributes.FIRE_TYPE) {
+                case "Prescribed Fire":
+                  color = "blue";
+                  break;
+                case "Unknown":
+                  color = "gray";
+                  break;
+                case "Wildfire":
+                  color = "red";
+                  break;
+                case "Wildland Fire Use":
+                  color = "green";
+                  break;
+                default:
+                  color = "black";
+              }
+
+              // Find appropriate size based on ACRES value
+              let size;
+              if (attributes.ACRES <= thresholds[0]) {
+                size = sizes[0];
+              } else if (attributes.ACRES <= thresholds[1]) {
+                size = sizes[1];
+              } else {
+                size = sizes[2];
+              }
+
+              const graphic = new Graphic({
+                geometry: {
+                  type: "point",
+                  longitude: coordinates[0],
+                  latitude: coordinates[1]
+                },
+                attributes: attributes,
+                symbol: {
+                  type: "simple-marker",
+                  color: color,
+                  size: size
+                }
+              });
+              graphicsLayer.add(graphic);
+            });
+          }
+
+          view.when(() => {
+            view.timeExtent = {
+              start: minDate,
+              end: maxDate
+            };
+          });
+        });
+
+    });
+  </script>
+</head>
+<body>
+<div id="viewDiv"></div>
+<div id="timeSlider"></div>
+</body>
+</html>
